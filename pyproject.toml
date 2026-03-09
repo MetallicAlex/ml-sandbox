@@ -8,3 +8,9 @@ dependencies = [
     "numpy>=2.4.3",
     "pandas>=3.0.1",
 ]
+
+[dependency-groups]
+ci = [
+    "pre-commit>=4.5.1",
+    "ruff>=0.15.5",
+]

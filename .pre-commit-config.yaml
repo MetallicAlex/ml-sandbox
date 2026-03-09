@@ -1,0 +1,21 @@
+repos:
+  - repo: git@github.com:astral-sh/ruff-pre-commit.git
+    rev: v0.15.5
+    hooks:
+      - id: ruff-check
+        types_or: [python, pyi]
+        args: [--fix]
+
+      - id: ruff-format
+        types_or: [python, pyi]
+
+  - repo: git@github.com:pre-commit/pre-commit-hooks.git
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=1000"]
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-case-conflict
