@@ -14,3 +14,6 @@ ci = [
     "pre-commit>=4.5.1",
     "ruff>=0.15.5",
 ]
+dev = [
+    "ipykernel>=7.2.0",
+]
